@@ -64,6 +64,7 @@ public class ServletThymeleaf extends HttpServlet {
 
 
         try {
+
             engine.process("time", context, resp.getWriter());
         } catch (DateTimeException e) {
             System.err.println(e.getMessage());
